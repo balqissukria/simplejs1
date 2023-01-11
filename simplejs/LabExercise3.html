@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleJs</title>
+</head>
+
+<body>
+    <script language="JavaScript">
+        var choice = window.prompt("Choose a number between 1 and 2 \n" + "1 : Execute the program \n" + "2: Exit", "ex: 1");
+
+        intchoice = parseInt(choice);
+        intnum = parseInt(num);
+
+        if (choice == 1) {
+            var num = window.prompt("Enter n value: ", "Enter the n value");
+            document.write("<table border= '2px' width ='300' height ='300' align ='center'>");
+            document.write("<th>Number</th>");
+            document.write("<th>Square</th>");
+            document.write("<th>Cube</th>");
+
+            for (var i = 0; i <= num; i++) {
+                document.write("<tr>");
+                document.write("<td align= 'center'>" + i + "</td>");
+                document.write("<td align= 'center'>" + i * i + "</td>");
+                document.write("<td align= 'center'>" + i * i * i + "</td>");
+                document.write("<tr>");
+
+            }
+            document.write("</table>");
+            
+        }else if (choice ==2){
+                var close = window.comfirm("Do you want to close?");
+                if (close ==true){
+                    window.close();
+                }
+            }
+
+    </script>
+</body>
+
+</html>
